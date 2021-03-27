@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exchange4Students</title>
+</head>
+<body>
+
+<!-- Fixed Header -->
+<div>
+    <div id="top">
+        <h1>Exchange4Students</h1>
+        <button id="cart">cart</button>
+        <button id="profile">profile</button>
+    </div>
+    <br> 
+    <div class="tab">
+        <button class="tablinks" onclick="display(event, 'Browse')">Browse</button>
+        <button class="tablinks" onclick="display(event, 'MyStore')">MyStore</button>
+      </div>
+</div>
+
+<br> 
+
+<!-- Tab content -->
+<form>
+	<label for="keyword">Search by Keyword</label><br>
+	<input type="text" id="keyword" placeholder="Type Something">
+	<input type="submit">
+</form>
+<p> or Browse by Category</p>
+<div id="categories"> 
+    <div class="category">
+        <button><img src="../images/CategoryBook.jpg"><br>Books</button>
+    </div>
+    <div class="category">
+        <button><img src="../images/CategoryClothing.jpg"><br>Clothing</button>
+    </div>
+    <div class="category">
+        <button><img src="../images/CategoryFurniture.jpg"><br>Furniture</button>
+    </div>
+    <div class="category">
+        <button><img src="../images/CategoryElectronics.jpg"><br>Electronics</button>
+    </div>
+    <div class="category">
+        <button><img src="../images/CategorySportGear.jpg"><br>SportGear</button>
+    </div>
+</div>
+
+<style>
+    .category {display:inline}
+</style>
+</body>
+</html>
