@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- Fixed Header -->
+<div id="top">
+    <h1>Exchange4Students</h1>
+    <button id="cart">cart</button>
+    <button id="profile">profile</button>
+</div>
+
+<h1>Checkout</h1>
+<div id="checkout">
+
+<div id="checkoutItems">
+    <div class="itemBuy">
+        <img src="../images/CategoryBook.jpg"  width="50">
+        Independent Computer Camera
+    </div>
+    <p>Total Price : $ 13</p>
+</div>
+
+<div id=checkoutForm>
+    <form>
+        <h3>Trade Off Location</h3>
+            <input name="location" type="radio" value="person"> In Person <br>
+            <input name="location" type="radio" value="mail"> Mail Package<br><br>
+
+        <h3>Location Information</h2>
+            <label>Address:</label>
+            <input type=text id="address" ><br><br>
+
+            <label>City/Town:</label>
+            <input type=text id="city" size="15"><br><br>
+
+            <label>State:</label>
+            <input type=text id="state" size="3" placeholder="ex) NJ"><br><br>
+
+            <label>Zip Code:</label>
+            <input type=text id="zipcode" maxlength="5" size="5"><br><br>
+
+        <h3>Payment Methods</h2>
+            <input name="method" type="radio" value="paypal"> Paypal <br>
+            <input name="method" type="radio" value="venmo"> Venmo <br>
+            <input name="method" type="radio" value="cash"> Cash (Only for in person pickup)<br><br>
+        
+        <h3>Payment Information</h3>
+        
+            <label>Account Info to Seller:</label>
+            <input type=text id="subject" placeholder="ex) venmogo928"><br><br><br>
+        
+        <button onclick=""">Cancel Order</button>
+        <input type="button" name="button" value="Purchase" id="button" onclick="ConfirmpPurchase()">
+    </form>
+</div>
+
+<div id="confirmation" style="display:none">
+    <span>
+        <h2>Your purchase has been succesfully placed</h2>
+        <h4>A confirmation email is being sent to your email now. Thank you for shopping with us, please com back soon</h4>
+        <button onclick="">Return to Browing Screen</button>
+    </span>
+</div>
+
+<script type = "text/javascript"> 
+    function ConfirmpPurchase() { 
+        document.getElementById("checkoutForm").style.display="none"; 
+        document.getElementById("checkoutItems").style.display="none";
+        document.getElementById("confirmation").style.display="block"; 
+        } 
+</script>
+
+</body>
+</html>
