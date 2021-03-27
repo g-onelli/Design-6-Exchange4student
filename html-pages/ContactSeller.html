@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- Fixed Header -->
+<h1>Exchange4Students</h1>
+
+<div id=email>
+    <form>
+        <label>To:</label>
+        <input type=text id="seller" placeholder="Sybil Cratz"><br><br>
+
+        <label>Subject:</label>
+        <input type=text id="subject" placeholder="Meeting Up for Physical Transfer"><br><br>
+
+        <textarea name="message" rows="30" cols="90"></textarea>
+
+        <br><br>
+        <button onclick=""">Cancel Email</button>
+        <input type="button" name="button" value="Send Email" id="button" onclick="Confirm()">
+    </form>
+</div>
+
+<div id="confirmation" style="display:none">
+    <span>
+        <h2>The email was succesfully sent!</h2>
+        <h4>Please check your email for a message back from the seller. This conversation is all on you, so make sure to keep 
+            chekcing for responses. If you can't see the message in your email, check you spam folder.
+        </h4>
+        <button onclick="">Return to Item</button>
+    </span>
+</div>
+
+<script type = "text/javascript"> 
+    function Confirm() { 
+        document.getElementById("email").style.display="none"; 
+        document.getElementById("confirmation").style.display="block"; 
+        } 
+</script>
+
+</body>
+</html>
